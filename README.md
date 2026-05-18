@@ -172,7 +172,3 @@ download_via_aria2c(tasks, out_dir="./downloads")
 3. 提交更改 (`git commit -m 'Add amazing feature'`)
 4. 推送到分支 (`git push origin feature/amazing-feature`)
 5. 创建 Pull Request
-
-## 📬 联系方式
-
-项目链接: [https://github.com/yourusername/geo-downloader](https://github.com/yourusername/geo-downloader)
