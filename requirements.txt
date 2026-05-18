@@ -1,0 +1,4 @@
+# GEO Downloader 依赖
+# 安装: pip install -r requirements.txt
+
+requests>=2.20

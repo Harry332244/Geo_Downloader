@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geo-downloader"
+version = "1.0.0"
+description = "GEO Supplementary File download tool with aria2c multi-threading support"
+readme = "README.md"
+authors = [
+    {name = "GEO Downloader Team", email = "downloader@example.com"},
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Intended Audience :: Science/Research",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "requests>=2.20",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/geo-downloader"
+"Bug Tracker" = "https://github.com/yourusername/geo-downloader/issues"
+
+[project.scripts]
+geo-downloader = "geo_downloader.suppl_downloader:main"
+
+[tool.setuptools.packages.find]
+include = ["geo_downloader*"]
